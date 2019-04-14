@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'perfil_profile.dart';
+import 'card_image_profile.dart';
 
 class ProfileTrips extends StatelessWidget {
   @override
@@ -86,7 +87,8 @@ class ProfileTrips extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             profileName,
-            PerfilProfile()
+            PerfilProfile(),
+            CardImageProfile()
           ],
         )
       ],
