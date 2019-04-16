@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/circle_button.dart';
 import 'floating_button_profile.dart';
 import 'review_profile.dart';
 
@@ -15,7 +16,7 @@ class CardImageProfile extends StatelessWidget{
       height: 210.0,
       width: 340.0,
       margin: EdgeInsets.only(
-          top: 70.0,
+          top: 17.0,
           left: 20.0,
           right: 20.0
       ),
@@ -87,6 +88,10 @@ class CardImageProfile extends StatelessWidget{
       ),
     );
 
+    void onPressedButton() {
+
+    }
+
     return Stack(
       alignment: Alignment(0.0, 1.5),
       children: <Widget>[
@@ -95,6 +100,7 @@ class CardImageProfile extends StatelessWidget{
         Container(
           margin: EdgeInsets.only(
             left: 150.0,
+            top: 20.0
           ),
             child: FloatingButtonProfile(),
         ),
