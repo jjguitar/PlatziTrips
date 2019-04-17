@@ -7,7 +7,7 @@ class CardImageProfile extends StatelessWidget{
 
   String pathImage = "assets/img/beach.jpeg";
   String descriptionPlace = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
-
+  CardImageProfile(this.pathImage);
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -92,19 +92,22 @@ class CardImageProfile extends StatelessWidget{
 
     }
 
-    return Stack(
-      alignment: Alignment(0.0, 1.5),
-      children: <Widget>[
-        card,
-        textDescription,
-        Container(
-          margin: EdgeInsets.only(
-            left: 150.0,
-            top: 20.0
+    return Container(
+      height: 290.0,
+      child: Stack(
+        alignment: Alignment(0.0, -1.0),
+        children: <Widget>[
+          card,
+          Container(
+            alignment: Alignment(0.0, 0.8),
+            child: textDescription,
           ),
+          Container(
+            alignment: Alignment(0.5, 1.0),
             child: FloatingButtonProfile(),
-        ),
-      ],
+          ),
+        ],
+      ),
     );
   }
 

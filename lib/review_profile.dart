@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 class ReviewProfile extends StatelessWidget {
 
   String pathImage = "asset/img/people.jpg";
-  String name = "Varuna Yasas";
-  String details = "1 review 5 photos";
-  String comment = "There is an amazing place in Sri Lanka";
+  String name = "Knuckles Mountains Range";
+  String details = "Hiking, Water tall hunting, Natural bath \n Scenery & Photography";
+  String comment = "Steps   123,123,123";
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,8 @@ class ReviewProfile extends StatelessWidget {
 
     final userComment = Container(
       margin: EdgeInsets.only(
-          left: 20.0
+          left: 20.0,
+              top: 7.0
       ),
 
       child: Text(
@@ -21,7 +22,8 @@ class ReviewProfile extends StatelessWidget {
         textAlign: TextAlign.left,
         style: TextStyle(
             fontFamily: "Lato",
-            fontSize: 13.0,
+            fontSize: 11.5,
+            color: Color(0xFFF49609),
             fontWeight: FontWeight.w900
         ),
 
@@ -39,8 +41,9 @@ class ReviewProfile extends StatelessWidget {
             textAlign: TextAlign.left,
             style: TextStyle(
                 fontFamily: "Lato",
-                fontSize: 13.0,
-                color: Color(0xFFa3a5a7)
+                fontSize: 8.0,
+                color: Color(0xFFB9BABE),
+                fontWeight: FontWeight.w900,
             ),
 
           ),
@@ -48,6 +51,8 @@ class ReviewProfile extends StatelessWidget {
 
     final userName = Container(
       margin: EdgeInsets.only(
+        top: 13.0,
+          bottom: 7.0,
           left: 20.0
       ),
 
@@ -56,7 +61,8 @@ class ReviewProfile extends StatelessWidget {
         textAlign: TextAlign.left,
         style: TextStyle(
             fontFamily: "Lato",
-            fontSize: 17.0
+            fontSize: 16.0,
+          fontWeight: FontWeight.w900
         ),
 
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/card_image_profile_list.dart';
 import 'package:flutter_app/circle_button.dart';
 import 'perfil_profile.dart';
 import 'card_image_profile.dart';
@@ -104,7 +105,7 @@ class ProfileTrips extends StatelessWidget {
             profileName,
             PerfilProfile(),
             profile,
-            CardImageProfile(),
+            CardImageProfileList(),
           ],
         )
       ],
