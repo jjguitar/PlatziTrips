@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/card_image_profile.dart';
-import 'card_image.dart';
+import 'package:flutter_app/profile/card_image_profile.dart';
 
 class CardImageProfileList extends StatelessWidget {
   @override
